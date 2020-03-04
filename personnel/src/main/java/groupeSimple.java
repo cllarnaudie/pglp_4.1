@@ -1,7 +1,11 @@
 package main.java;
-import java.util.ArrayList; 
+//import java.util.ArrayList; 
 
 /* contient des gens (liste de personnel)*/
 public class groupeSimple extends groupePersonnel{
 
+	
+	public groupeSimple () {
+		super (); 
+	}
 }

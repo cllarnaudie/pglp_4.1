@@ -6,5 +6,10 @@ import java.util.ArrayList;
  * et liste de groupe)*/
 
 public class groupeCompose extends groupePersonnel {
-
+	private ArrayList <groupePersonnel> groupesPersonnel; 
+	
+	public groupeCompose() {
+		super(); 
+		groupesPersonnel = new ArrayList<groupePersonnel>(); 
+	}
 }
