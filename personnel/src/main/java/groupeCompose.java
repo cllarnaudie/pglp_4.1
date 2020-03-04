@@ -12,4 +12,8 @@ public class groupeCompose extends groupePersonnel {
 		super(); 
 		groupesPersonnel = new ArrayList<groupePersonnel>(); 
 	}
+	
+	public void ajouter_personnel (groupePersonnel nouveau) {
+		groupesPersonnel.add(nouveau); 
+	}
 }
