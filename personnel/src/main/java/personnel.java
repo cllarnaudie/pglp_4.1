@@ -2,7 +2,7 @@ package main.java;
 
 import java.time.LocalDate; 
 import java.util.ArrayList; 
-
+import java.time.Month;
 /*classe immuable donc final devant classe */
 public final class personnel {
 	
@@ -13,8 +13,6 @@ public final class personnel {
 	private final ArrayList <String> numeroTelephone; 
 	
 	public  static class Builder  {
-
-		
 	    private  String nom;
 		private  String prenom; 
 		private  String fonction; 
@@ -25,11 +23,21 @@ public final class personnel {
 		this.nom = nom; 
 		this.prenom = prenom; 
 		this.fonction= "inconnu";
-		this.dateNaissance =new LocalDate(0,0, 0); 
-		this.numeroTelephone = "inconnu"; 
-	 
+		this.dateNaissance = LocalDate.of(0, Month.JANUARY, 0); 
+		this.numeroTelephone = new ArrayList<String> (); 
 		
 	}
 	
+	public Builder fonction () {
+		
+	}
+	
+	public Builder dateNaissance () {
+		
+	}
+	
+	public Builder numeroTelephone() {
+		
+	}
 }
 }
