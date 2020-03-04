@@ -28,15 +28,20 @@ public final class personnel {
 		
 	}
 	
-	public Builder fonction () {
+	public Builder fonction (String fonction) {
+		this.fonction = fonction; 
+		return this; 
+	}
+	
+	public Builder dateNaissance (int annee, Month mois, int jour) {
+		dateNaissance = LocalDate.of(annee, mois, jour); 
+		return this; 
 		
 	}
 	
-	public Builder dateNaissance () {
-		
-	}
-	
-	public Builder numeroTelephone() {
+	public Builder numeroTelephone(String numero) {
+		numeroTelephone.add(numero); 
+		return this; 
 		
 	}
 }
