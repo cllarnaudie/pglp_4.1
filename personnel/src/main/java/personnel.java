@@ -43,6 +43,10 @@ public final class personnel {
 		numeroTelephone.add(numero); 
 		return this; 
 		}
+	
+	public personnel build () {
+		return new  personnel (this); 
+	}
 		
 }
 	public personnel (Builder builder) {
