@@ -1,6 +1,7 @@
 package main.java;
 
 import java.time.LocalDate; 
+import java.util.ArrayList; 
 
 /*classe immuable donc final devant classe */
 public final class personnel {
