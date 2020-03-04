@@ -42,7 +42,19 @@ public final class personnel {
 	public Builder numeroTelephone(String numero) {
 		numeroTelephone.add(numero); 
 		return this; 
+		}
+		
+}
+	public personnel (Builder builder) {
+		nom = builder.nom; 
+		prenom = builder.prenom; 
+		fonction = builder.fonction; 
+		dateNaissance = builder.dateNaissance; 
+		numeroTelephone = builder.numeroTelephone; 
 		
 	}
-}
+	
+	
+	
+	
 }
