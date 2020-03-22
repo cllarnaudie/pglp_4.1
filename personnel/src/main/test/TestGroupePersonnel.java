@@ -1,8 +1,7 @@
 package main.test;
 
-//import static org.junit.Assert.*;
-
 import org.junit.Test;
+
 import main.java.GroupePersonnel;
 import main.java.Personnel;
 
@@ -18,13 +17,8 @@ public class TestGroupePersonnel {
 		Personnel p1 = new Personnel.Builder("Gertrude", "Germaine")
 				       .build(); 
 
-		
-		gp.ajouter_personnel(p1);
-		
-		System.out.println("la personne " + p1.getPrenom() + " " + p1.getNom() + 
-				 " a ete supprime de la liste \n");
-
-	    		     
+		  gp.ajouter_personnel(p1);
+			    		     
 }
 	
 	@Test
@@ -69,8 +63,6 @@ public class TestGroupePersonnel {
 		GroupePersonnel gp3 = new GroupePersonnel ();  	
 		Personnel p4 = new Personnel.Builder("More", "Thomas ")
 				       .build();
-		Personnel p5 = new Personnel.Builder("More", "Thomas ")
-			       .build();
 		
 		gp3.ajouter_personnel(p4);
 		gp3.supprimer_personnel(p4);

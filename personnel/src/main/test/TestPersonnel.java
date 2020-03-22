@@ -2,7 +2,6 @@ package main.test;
 
 import java.time.Month;
 
-
 import org.junit.Test;
 
 import main.java.Personnel;
@@ -48,7 +47,7 @@ public class TestPersonnel {
 	    	          .build() ; 
 	    
 		System.out.println(perso.getPrenom() + " " + perso.getNom() + " " + perso.getDateNaissance() +
-				" "+ perso.getFonction()+ " " + perso.getNumeroTelephone() );
+				" "+ perso.getFonction()+ " " + perso.getNumeroTelephone() + "\n" );
 		System.out.println("\n");	    		 	 
 }
  	
@@ -67,8 +66,8 @@ public class TestPersonnel {
 	    	          .build() ; 
 	    
 		System.out.println(perso2.getPrenom() + " " + perso2.getNom() + " " + perso2.getDateNaissance() +
-				" "+ perso2.getFonction()+ " " + perso2.getNumeroTelephone() );
-		System.out.println("\n");
+				" "+ perso2.getFonction()+ " " + perso2.getNumeroTelephone()  + "\n");
+	
 	    
       System.out.println ("Le nom est vide "+  NOM_VIDE.isEmpty() + "\n"); 
 		    		 	 
@@ -87,9 +86,7 @@ public class TestPersonnel {
 	    	          .build() ; 
 	    
 		System.out.println(perso3.getPrenom() + " " + perso3.getNom() + " " + perso3.getDateNaissance() +
-				" "+ perso3.getFonction()+ " " + perso3.getNumeroTelephone() );
-		System.out.println("\n");
-		
+				" "+ perso3.getFonction()+ " " + perso3.getNumeroTelephone() + "\n");
 	
 			System.out.println ("Le prenom est vide "+  PRENOM_VIDE.isEmpty() + "\n"); 
 		}
@@ -110,8 +107,8 @@ public class TestPersonnel {
 	    	          .build() ; 
 	    
 		System.out.println(perso4.getPrenom() + " " + perso4.getNom() + " " + perso4.getDateNaissance() +
-				" "+ perso4.getFonction()+ " " + perso4.getNumeroTelephone() );
-		System.out.println("\n");
+				" "+ perso4.getFonction()+ " " + perso4.getNumeroTelephone() + "\n");
+
 	   	
 		if (perso4.getFonction() == " ") {
 			System.out.println (" La fonction est vide \n"); 
@@ -132,9 +129,7 @@ public class TestPersonnel {
 	    	          .build() ; 
 	    
 		System.out.println(perso5.getPrenom() + " " + perso5.getNom() + " " + perso5.getDateNaissance() +
-				" "+ perso5.getFonction()+ " " + perso5.getNumeroTelephone() );
-		System.out.println("\n");
-		
+				" "+ perso5.getFonction()+ " " + perso5.getNumeroTelephone()  + "\n" );
 	
 		System.out.println ("Le numero de telephone est vide "+ perso5.getNumeroTelephone().isEmpty() + "\n"); 
        	}
@@ -152,10 +147,8 @@ public class TestPersonnel {
 	    	          .build() ; 
 	    
 		System.out.println(perso6.getPrenom() + " " + perso6.getNom() + " " + perso6.getDateNaissance() +
-				" "+ perso6.getFonction()+ " " + perso6.getNumeroTelephone() );
-		System.out.println("\n");
+				" "+ perso6.getFonction()+ " " + perso6.getNumeroTelephone()  + "\n" );
 		
-
        	}
 	   	    		 	 
 }
