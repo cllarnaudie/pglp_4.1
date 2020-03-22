@@ -1,6 +1,7 @@
 package main.java;
 import java.util.ArrayList; 
-import java.util.Iterator;
+
+
 
 public  class GroupePersonnel {
 
@@ -22,6 +23,8 @@ public  class GroupePersonnel {
 		}
 		else {
 			personnels.add(personnel); 
+			System.out.println ("La personne " + personnel.getPrenom() + " " + 
+					personnel.getNom() + " a ete ajoute de la liste \n"); 
 		}
 	}
 	
@@ -45,8 +48,9 @@ public  class GroupePersonnel {
 	
 	}
 	
-	public Iterator getPersonnels () {
-		return personnels.iterator(); 
-	}
+
+
+	
+	
 	
 }

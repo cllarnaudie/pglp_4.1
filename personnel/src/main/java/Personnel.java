@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * une classe immuable est une classe dont les instances sont immuables par conception et implémentation
  * c est une classe dont les instances ne peuvent pas etre modifiees apres implementation
  * */
-public final class Personnel {
+public final class Personnel implements Composant{
 	
     private final String nom;
 	private final String prenom; 
