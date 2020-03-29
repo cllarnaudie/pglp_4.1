@@ -72,7 +72,7 @@
               <archive>
                   <manifest>
                       <mainClass>
-                          personnel/Main 
+                          personnel/MainApplicationSingleton
                       </mainClass>
                   </manifest>
               </archive>
