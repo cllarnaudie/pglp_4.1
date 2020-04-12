@@ -6,7 +6,7 @@ import main.java.GroupePersonnel;
 import main.java.Personnel;
 
 public class TestGroupePersonnel {
-	
+
 
 	@Test
 	public void testGroupePersonnelAjouterPersonne() {
@@ -15,12 +15,12 @@ public class TestGroupePersonnel {
 
 		GroupePersonnel gp = new GroupePersonnel ();  	
 		Personnel p1 = new Personnel.Builder("Gertrude", "Germaine")
-				       .build(); 
+				.build(); 
 
-		  gp.ajouter_personnel(p1);
-			    		     
-}
-	
+		gp.ajouter_personnel(p1);
+
+	}
+
 	@Test
 	public void testGroupePersonnelSupprimerPersonnel() {
 
@@ -28,15 +28,13 @@ public class TestGroupePersonnel {
 
 		GroupePersonnel gp2 = new GroupePersonnel ();  	
 		Personnel p2 = new Personnel.Builder("Jean", "Bouysous")
-				        .build(); 
+				.build(); 
 
-		
 		gp2.ajouter_personnel(p2);
 		gp2.supprimer_personnel(p2);
-	    		     
-}
-	
-	
+
+	}
+
 
 	@Test
 	public void testGroupeAjouterMemePersonnel() {
@@ -45,14 +43,12 @@ public class TestGroupePersonnel {
 
 		GroupePersonnel gp2 = new GroupePersonnel ();  	
 		Personnel p3 = new Personnel.Builder("Marcel ", "Pagnol ")
-				       .build();
+				.build();
 
-		
+
 		gp2.ajouter_personnel(p3);
 		gp2.ajouter_personnel(p3);
 	}
-	    	     
-
 
 
 	@Test
@@ -62,13 +58,12 @@ public class TestGroupePersonnel {
 
 		GroupePersonnel gp3 = new GroupePersonnel ();  	
 		Personnel p4 = new Personnel.Builder("More", "Thomas ")
-				       .build();
-		
+				.build();
+
 		gp3.ajouter_personnel(p4);
 		gp3.supprimer_personnel(p4);
 		gp3.supprimer_personnel(p4);
-		   	    		     
-}
-	
+
+	}
 
 }
